@@ -36,6 +36,13 @@ namespace UserRegistration
                 Console.WriteLine("Enter Valid mobile Number");
                 mobileNumber = Console.ReadLine();
             }
+            Console.WriteLine("Enter Password");
+            string Password = Console.ReadLine();
+            while (!userValidation.ValidatePassword(Password))
+            {
+                Console.WriteLine("Enter Valid password");
+                Password = Console.ReadLine();
+            }
         }
     }
 }
