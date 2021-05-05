@@ -41,7 +41,7 @@ namespace UserRegistration
             while (!userValidation.ValidatePassword(Password))
             {
                 Console.WriteLine("Enter Valid password");
-                Password = Console.ReadLine();
+                Password = Console.ReadLine(); 
             }
         }
     }
