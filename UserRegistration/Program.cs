@@ -22,6 +22,13 @@ namespace UserRegistration
                 Console.WriteLine("Enter Valid Name");
                 lastName = Console.ReadLine();
             }
+            Console.WriteLine("Enter Email");
+            string email = Console.ReadLine();
+            while (!userValidation.ValidateEmail(email))
+            {
+                Console.WriteLine("Enter Valid email");
+                email = Console.ReadLine();
+            }
         }
     }
 }
