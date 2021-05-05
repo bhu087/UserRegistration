@@ -8,9 +8,14 @@ namespace UserRegistration
     class UserValidation
     {
         const string FIRST_NAME_REGEX = "^[A-Z]{1}[a-z]{2,}$";
+        const string LAST_NAME_REGEX = FIRST_NAME_REGEX;
         public bool ValidateFirstName(string firstName)
         {
             return Regex.IsMatch(firstName,FIRST_NAME_REGEX);
+        }
+        public bool ValidateLastName(string lastName)
+        {
+            return Regex.IsMatch(lastName, LAST_NAME_REGEX);
         }
     }
 }
