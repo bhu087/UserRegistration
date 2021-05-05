@@ -29,6 +29,13 @@ namespace UserRegistration
                 Console.WriteLine("Enter Valid email");
                 email = Console.ReadLine();
             }
+            Console.WriteLine("Enter Mobile Number");
+            string mobileNumber = Console.ReadLine();
+            while (!userValidation.ValidateMobileNumber(mobileNumber))
+            {
+                Console.WriteLine("Enter Valid mobile Number");
+                mobileNumber = Console.ReadLine();
+            }
         }
     }
 }
